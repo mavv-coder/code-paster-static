@@ -114,13 +114,30 @@ ul {
 }
 
 .btn {
-  padding: 2rem 3rem;
+  padding: 2rem 2.5rem;
   text-transform: uppercase;
   font-size: 1.6rem;
   color: var(--color-light);
-  background-color: var(--color-secondary-main);
+  letter-spacing: 1px;
+  background-image: linear-gradient(
+    60deg,
+    var(--color-secondary-main),
+    var(--color-primary-main) 40%
+  );
+  background-size: 300% auto;
   border-radius: 0.6rem;
   border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    60deg,
+    var(--color-primary-main),
+    var(--color-secondary-main) 60%
+  );
+  background-size: 200% auto;
 }
 
 /* - - - footer - - - */
