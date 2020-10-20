@@ -1,0 +1,130 @@
+/* - - - basic - - - */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* custom properties */
+  --font-roboto: "Roboto", sans-serif;
+  --color-bg: #ffffff;
+  --color-light: #ffffff;
+  --color-dark: #2e2800;
+  --color-primary-main: #625261;
+  --color-secondary-light: #b8e4da;
+  --color-secondary-main: #89beb3;
+  --color-secondary-dark: #658d85;
+
+  box-sizing: border-box;
+  font-size: 62.4%;
+  font-family: var(--font-roboto);
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* - - - navbar - - - */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--color-secondary-main);
+}
+
+.navbar--logo {
+  height: 5rem;
+  margin-right: auto;
+  fill: var(--color-dark);
+}
+
+.navbar--list {
+  display: flex;
+}
+
+.navbar--list--item a {
+  margin-right: 2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.6rem;
+  background-color: var(--color-secondary-light);
+  transition: all 0.1s ease-in-out;
+  color: var(--color-dark);
+  transition: all 0.1s ease-in-out;
+}
+
+.navbar--list--item:hover a {
+  background-color: var(--color-secondary-dark);
+  cursor: pointer;
+  color: var(--color-light);
+}
+
+.navbar--list--item:last-of-type a {
+  margin-right: 0;
+}
+
+/* - - - header - - - */
+.header {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  color: var(--color-dark);
+  text-transform: uppercase;
+}
+
+.header h1 {
+  font-weight: 200;
+  width: max-content;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-secondary-main);
+}
+
+/* - - - main - - - */
+.instructions {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3rem;
+  border: 1px solid var(--color-secondary-main);
+  border-radius: 0.6rem;
+}
+
+.btn-container {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--color-light);
+  background-color: var(--color-secondary-main);
+  border-radius: 0.6rem;
+  border: none;
+}
+
+/* - - - footer - - - */
+.footer {
+  background-color: var(--color-primary-main);
+  height: 20rem;
+}
