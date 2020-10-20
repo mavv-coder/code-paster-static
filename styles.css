@@ -85,8 +85,8 @@ ul {
 
 /* - - - header - - - */
 .header {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   color: var(--color-dark);
   text-transform: uppercase;
 }
@@ -128,8 +128,8 @@ ul {
 
 /* - - - button - - - */
 .btn-container {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   display: flex;
   justify-content: center;
 }
@@ -163,6 +163,51 @@ ul {
 
 /* - - - footer - - - */
 .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10rem;
   background-color: var(--color-primary-main);
-  height: 20rem;
+}
+
+.footer--list {
+  border-left: 1px solid var(--color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer--list--item a {
+  padding: 0.8rem 2rem;
+  border-radius: 0.6rem;
+  color: var(--color-light);
+}
+
+.footer--list--item a:hover {
+  color: var(--color-secondary-main);
+}
+
+.footer--logo-lemon-container {
+  position: relative;
+  width: 13.8rem;
+  height: 12rem;
+  border: 1px solid var(--color-light);
+  border-radius: 1.6rem;
+}
+
+.footer--logo-lemon-container:hover {
+  border: 1px solid var(--color-secondary-main);
+  cursor: pointer;
+}
+
+.footer--logo-lemon-container:hover .footer--logo-lemon {
+  fill: var(--color-secondary-main);
+}
+
+.footer--logo-lemon {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.8rem;
+  fill: var(--color-light);
+  height: 10rem;
+  width: 10rem;
 }
